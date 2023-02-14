@@ -1,0 +1,16 @@
+.root {
+  @apply font-sans;
+  @apply text-lg font-semibold;
+
+  @apply transition-colors;
+}
+
+.equals {}
+
+.increase {
+  @apply text-green-500;
+}
+
+.decrease {
+  @apply text-red-500;
+}

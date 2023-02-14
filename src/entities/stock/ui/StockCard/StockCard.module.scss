@@ -1,0 +1,50 @@
+.root {
+  @apply h-full;
+  @apply flex flex-col;
+  @apply p-3 pr-4;
+  @apply bg-white;
+  @apply rounded-xl;
+  @apply font-sans;
+
+  @apply border border-solid border-gray-200;
+  @apply drop-shadow-sm;
+
+  &:hover {
+    @apply drop-shadow-md;
+  }
+}
+
+.rootGreen {
+  @apply border border-solid border-green-300;
+}
+
+.rootRed {
+  @apply border border-solid border-red-300;
+}
+
+.header {
+  @apply flex flex-row items-center justify-between;
+}
+
+.wrapper {
+  @apply flex items-center;
+  @apply gap-2;
+}
+
+.name {
+  @apply m-0;
+  @apply font-bold text-base;
+}
+
+.ticker {
+  @apply font-normal;
+  @apply text-gray-500 text-xs;
+}
+
+.icon {
+  @apply rounded-full overflow-hidden;
+}
+
+.body {
+  @apply mt-4 h-full;
+}

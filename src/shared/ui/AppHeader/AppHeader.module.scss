@@ -1,0 +1,12 @@
+.root {
+  @apply flex flex-row justify-between items-center;
+  @apply p-2;
+
+  @media (max-width: theme('screens.sm')) {
+    @apply flex-col items-start gap-2;
+  }
+}
+
+.logo {}
+
+.actions {}

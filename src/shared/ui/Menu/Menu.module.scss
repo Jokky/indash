@@ -1,0 +1,12 @@
+.root {
+  @apply flex flex-col;
+  @apply p-2;
+  @apply bg-gray-50 bg-opacity-50;
+  @apply gap-2;
+  @apply rounded-md;
+}
+
+.sticky {
+  top: 0;
+  position: sticky;
+}

@@ -1,0 +1,58 @@
+.root {
+  @apply relative;
+}
+
+.current {
+  @apply max-w-fit;
+  @apply bg-black;
+  @apply text-white font-sans;
+  @apply py-1.5 px-2;
+  @apply rounded-lg;
+  @apply text-sm;
+  @apply cursor-pointer;
+
+  &:hover {
+    @apply bg-gray-800;
+  }
+}
+
+.items {
+  @apply hidden;
+
+  @apply absolute;
+  @apply mt-1;
+  @apply bg-black;
+  @apply rounded-lg;
+  @apply p-1;
+  @apply drop-shadow-lg;
+
+  z-index: 100;
+}
+
+.open {
+  @apply block;
+}
+
+.item {
+  @apply text-white text-sm;
+  @apply py-0.5 px-1.5;
+  @apply rounded-md;
+  @apply cursor-pointer;
+
+  &:hover {
+    @apply bg-gray-700;
+  }
+
+  &:not(:last-child) {
+    @apply mb-1;
+  }
+}
+
+.selected {
+  @apply bg-white;
+  @apply text-black;
+
+  &:hover {
+    @apply bg-gray-100;
+  }
+}

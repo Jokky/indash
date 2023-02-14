@@ -1,0 +1,19 @@
+.root {
+  @apply flex flex-row justify-between;
+  @apply font-sans font-mono;
+  @apply rounded-lg;
+  @apply p-2;
+
+  &:hover {
+    @apply bg-gray-50;
+  }
+}
+
+.name {
+  @apply text-gray-700;
+}
+.value {
+  @apply text-gray-700;
+}
+
+.tooltip {}

@@ -1,0 +1,14 @@
+.root {
+  height: 32px;
+  width: 32px;
+
+  @apply flex items-center justify-center;
+  @apply bg-black;
+  @apply rounded-full;
+  @apply text-white;
+
+  &:hover {
+    @apply bg-gray-800;
+    @apply drop-shadow-md;
+  }
+}

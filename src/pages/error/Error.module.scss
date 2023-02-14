@@ -1,0 +1,22 @@
+.root {
+  @apply container h-screen w-full;
+  @apply flex flex-col justify-center items-center;
+  @apply mx-auto;
+  @apply font-sans;
+}
+
+.title {
+  @apply text-6xl font-black text-center;
+  @apply mb-7;
+}
+
+.description {}
+
+.reload {
+  @apply py-2 px-4;
+  @apply bg-black;
+  @apply rounded-full;
+  @apply text-white;
+
+  @apply hover:drop-shadow-lg;
+}

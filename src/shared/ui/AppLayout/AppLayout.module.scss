@@ -1,0 +1,9 @@
+.root {
+  //@apply container mx-auto;
+  @apply flex flex-row;
+}
+
+.container {
+  width: 100%;
+  @apply flex flex-col;
+}
