@@ -24,7 +24,7 @@ export const StockPage = () => {
     const { stocks, prices } = useStocksStore();
     const figies = stocks.map(({ figi }) => figi).join(',');
 
-    useSSE(`http://localhost:3000/api/v1/stream/market?figies=${figies}`, {
+    useSSE(`/api/v1/stream/market?figies=${figies}`, {
         onData: ({ data }) => setPriceAction(toType<StockPrice>(data)),
     });
 

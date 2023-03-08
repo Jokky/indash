@@ -23,17 +23,17 @@ const MapFromToIntervals: Record<INTERVALS, () => [Date, Date]> = {
     },
     [INTERVALS.INTERVAL_5M]: () => {
         const [from, to] = getFromTo();
-        from.setHours(from.getHours() - 2);
+        from.setHours(from.getHours() - 3);
         return [from, to];
     },
     [INTERVALS.INTERVAL_15M]: () => {
         const [from, to] = getFromTo();
-        from.setHours(from.getHours() - 4);
+        from.setHours(from.getHours() - 5);
         return [from, to];
     },
     [INTERVALS.INTERVAL_1H]: () => {
         const [from, to] = getFromTo();
-        from.setDate(from.getDate() - 5);
+        from.setDate(from.getDate() - 2);
         return [from, to];
     },
     [INTERVALS.INTERVAL_1D]: () => {
